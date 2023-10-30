@@ -4,12 +4,14 @@ import ReactDom from "react-dom";
 function Greeting() {
   return (
     <div>
-      <h1>hello world</h1>
-      <h2>joao</h2>
+      <Message/>
+      <Person/>
     </div>
   );
 }
-// const Greeting = ()=>{
-//   return React.createElement('h1',{},'hello world')
-// }
+
+const Person = () => <h2>joao</h2>;
+const Message = () =>{
+  return <p>This is my message</p>
+}
 ReactDom.render(<Greeting />, document.getElementById("root"));
